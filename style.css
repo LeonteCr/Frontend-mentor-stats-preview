@@ -1,0 +1,113 @@
+@font-face {
+    font-family: Inter;
+    src: url(./fonts/Inter-VariableFont_slnt\,wght.ttf);
+}
+@font-face {
+    font-family: Lexend;
+    src: url(./fonts/LexendDeca-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Interbold;
+    src: url(./fonts/Inter-Bold.ttf);
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(233, 53%, 12%);
+}
+
+article{
+    background-color: hsl(244, 38%, 16%);
+    margin: 4rem 1.5rem;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    text-align: center;
+}
+h1 {
+    color: hsl(0, 0%, 100%);
+    padding: 2rem;
+    margin: 0;
+    font-family: Interbold;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+h1>span {
+    color: hsl(277, 64%, 61%);
+    font-family: Lexend;
+    font-weight: 700;
+    
+}
+
+p>span{
+    color:hsla(0, 0%, 100%, 0.75);
+    font-family: Lexend;
+    font-size: 12px;
+    letter-spacing: 1px;
+    opacity: 0.7;
+}
+div>p {
+    color: hsl(0, 0%, 100%);
+    font-family: Interbold;
+    font-size: 1.3rem;
+    
+    line-height: 1.5rem;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    
+}
+.para {
+    color: hsl(0, 0%, 100%);
+    opacity: 0.7;
+    padding: 0.5rem 1.5rem;
+    margin: 0;
+    font-family: Inter;
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+@media (min-width: 801px) {
+    article {
+        display: flex;
+        flex-direction: row-reverse;
+    }
+    img {
+        object-fit: cover;
+    }
+    header, main {
+        flex: 1;
+    }
+    .stats {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
+        padding: 0 8rem 0 6rem;
+    }
+    div>p {
+        font-size: 2rem;
+    }
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    h1 {
+        font-size: 3rem;
+        padding: 6rem 6rem 2rem 6rem;
+        text-align: left;
+        margin-bottom: 0;
+       
+    }
+    .para {
+        text-align: left;
+        padding: 0 6rem 6rem 6rem;
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        
+        
+    }
+}
