@@ -16,7 +16,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: hsl(233, 47%, 7%)
+    background-color:hsl(233, 47%, 7%);
 }
 
 article{
@@ -71,9 +71,18 @@ img {
     line-height: 1.5rem;
 }
 @media (min-width: 801px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
     article {
         display: flex;
         flex-direction: row-reverse;
+        height: 600px;
+        width: 1400px;
     }
     img {
         object-fit: cover;
